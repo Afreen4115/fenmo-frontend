@@ -1,16 +1,34 @@
-# React + Vite
+💳 Expense Tracker UI
+A fast, responsive web interface for tracking personal finances, built with React, Vite, and Javascript.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🎨 Key Features
+Real-time Totals: Automatically calculates and displays the total amount of currently filtered expenses.
 
-Currently, two official plugins are available:
+Smart Filtering: Instant UI updates when filtering by category or sorting by date.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Network Resilience: Implements retry logic with unique request identifiers to handle unreliable connections.
 
-## React Compiler
+Responsive Design: Clean table/list view for reviewing history.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🛠 Tech Stack
+Framework: React 18+ (Vite)
 
-## Expanding the ESLint configuration
+Language: JavaScript
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Styling: Tailwind CSS,Material UI
+
+State Management:Redux toolkit
+
+🏗 Component Structure
+ExpenseForm: Handles adding new entries and generates unique request_ids for retries.
+
+ExpenseList: Displays a table or list of existing entries.
+
+Filters: UI controls for category selection and sorting.
+
+SummaryCard: Displays the "Total: ₹X" for the visible expenses.
+
+⚙️ Setup
+Run npm install.
+
+Run npm run dev to launch the Vite preview.
